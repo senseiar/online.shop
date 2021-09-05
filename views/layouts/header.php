@@ -24,18 +24,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/template/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="/template/images/ico/apple-touch-icon-57-precomposed.png">
 
-    <script src="/template/js/jquery-2.2.1.min.js"></script>
-    <script src="/template/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="/template/js/jquery.scrollUp.min.js"></script>
-    <script src="/template/js/price-range.js"></script>
-    <script src="/template/js/jquery.prettyPhoto.js"></script>
-    <script src="/template/js/main.js"></script>
-
-    <!-- cycle2 slider -->
-    <script src="/template/js/jquery.cycle2.min.js"></script>
-    <script src="/template/js/jquery.cycle2.carousel.min.js"></script>
-    <!-- cycle2 slider -->
+  
 </head>
 <!--/head-->
 
@@ -49,7 +38,7 @@
                     <div class="col-sm-6">
                         <div class="contactinfo">
                             <ul class="nav nav-pills">
-                                <li><a href="#"><i class="fa fa-phone"></i> +38 050 746 39 23</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i> +38 069 846 33 22</a></li>
                                 <li><a href="#"><i class="fa fa-envelope"></i> info@online.shop</a></li>
                             </ul>
                         </div>

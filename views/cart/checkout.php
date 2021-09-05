@@ -21,8 +21,8 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-sm-9 padding-right">
+           
+            <div class="col-md-4 col-md-offset-2">
                 <div class="features_items">
                     <h2 class="title text-center">Корзина</h2>
 
@@ -31,11 +31,11 @@
                         <p>Заказ оформлен. Мы Вам перезвоним.</p>
                     <?php else: ?>
 
-                        <p>Выбрано товаров: <?php echo $totalQuantity; ?>, на сумму: <?php echo $totalPrice; ?>, грн</p><br/>
+                        <p>Выбрано товаров: <b><?php echo $totalQuantity; ?></b> на сумму <?php echo $totalPrice; ?> грн</p><br/>
 
                         <?php if (!$result): ?>                        
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-9">
                                 <?php if (isset($errors) && is_array($errors)): ?>
                                     <ul>
                                         <?php foreach ($errors as $error): ?>
@@ -53,10 +53,10 @@
                                         <input type="text" name="userName" placeholder="" value="<?php echo $userName; ?>"/>
 
                                         <p>Номер телефона</p>
-                                        <input type="text" name="userPhone" placeholder="" value="<?php echo $userPhone; ?>"/>
+                                        <input id="phone" type="text" name="userPhone" value="<?php echo $userPhone; ?>"/>
 
                                         <p>Комментарий к заказу</p>
-                                        <input type="text" name="userComment" placeholder="Сообщение" value="<?php echo $userComment; ?>"/>
+                                        <textarea type="text" name="userComment" placeholder="Сообщение"><?php echo $userComment; ?></textarea>
 
                                         <br/>
                                         <br/>

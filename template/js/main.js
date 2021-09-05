@@ -1,12 +1,17 @@
 /*price range*/
 
- $('#sl2').slider();
+$('#sl2').slider();
 
-	var RGBChange = function() {
-	  $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
-	};	
-		
+var RGBChange = function () {
+	$('#RGB').css('background', 'rgb(' + r.getValue() + ',' + g.getValue() + ',' + b.getValue() + ')')
+};
+
 /*scroll to top*/
+$(function () {
+	//2. Получить элемент, к которому необходимо добавить маску
+
+	$("#phone").mask("+38(999)-999-9999",{placeholder: "+38(___)-___-____"});
+});
 
 $(document).ready(function(){
 	$(function () {
@@ -27,6 +32,8 @@ $(document).ready(function(){
 	        zIndex: 2147483647 // Z-Index for the overlay
 		});
 	});
+
+	
 	
 });
 
@@ -78,5 +85,17 @@ $(document).ready(function (){
 		$('.form-control').focus();
 	});
 
+});
+
+$(document).ready(function(){
+	$(".add-to-cart").click(function () {
+		var id = $(this).attr("data-id");
+		$.post("/cart/addAjax/"+id, {}, function (data) {
+			$("#cart-count").html(data);
+		});
+		return false;
+	});
+
+	
 });
 

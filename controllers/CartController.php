@@ -65,7 +65,7 @@ class CartController
 
         $totalPrice = Cart::getTotalPrice($products);
        
-        
+        $totalQuantity = Cart::countItems();
 
         //поля для формы
         $userName = false;

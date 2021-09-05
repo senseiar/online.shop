@@ -1,7 +1,7 @@
 <?php
 return [
     'host' => 'localhost',
-    'dbname' => 'online.shop',
+    'dbname' => 'online_shop',
     'user' => 'root',
     'password' => '',
 ];
